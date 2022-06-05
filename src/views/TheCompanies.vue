@@ -24,7 +24,7 @@
       <FormDialog
         v-if="formStructure"
         title="Edit Company"
-        :key="Date.now()"
+        :key="`edit${Date.now()}`"
         :formData="selectedCompany"
         :isVisible="dialogConditions.isEditCompanyDialogVisible"
         :formStructure="formStructure"
