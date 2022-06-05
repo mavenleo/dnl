@@ -48,7 +48,8 @@ export default Vue.extend({
   },
   methods: {
     save() {
-      const formValue = this.$refs.dynamicForm.getFormValues();
+      const dynamicForm = this.$refs.password as any;
+      const formValue = dynamicForm.$refs.getFormValues();
 
       if (formValue.companyId) {
         this.$store.dispatch('companies/updateCompany', formValue);

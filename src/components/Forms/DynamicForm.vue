@@ -46,7 +46,8 @@ export default Vue.extend({
     }),
   },
   mounted() {
-    this.form = this.$_.cloneDeep(this.selectedCompany) || {};
+    const selectedCompany = this.selectedCompany || {};
+    this.form = { ...selectedCompany };
   },
   methods: {
     getComponentByFieldType(type: string) {
