@@ -6,7 +6,11 @@
       </v-card-title>
 
       <v-card-text>
-        <v-container><DynamicForm /></v-container>
+        <v-container
+          ><DynamicForm
+            ref="dynamicForm"
+            :formStructure="formStructure"
+        /></v-container>
       </v-card-text>
 
       <v-card-actions>
@@ -42,7 +46,20 @@ export default Vue.extend({
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    save() {
+      const formValue = this.$refs.dynamicForm.getFormValues();
+
+      if (formValue.companyId) {
+        this.$store.dispatch('companies/updateCompany', formValue);
+      } else {
+        this.$store.dispatch('companies/addCompany', formValue);
+      }
+
+      this.$store.dispatch('companies/saveSelectedCompany', null);
+      this.$emit('close');
+    },
+  },
 });
 </script>
 

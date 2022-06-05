@@ -6,6 +6,12 @@ const companiesGetters: GetterTree<CompaniesState, BaseState> = {
   companies(state) {
     return state.companies;
   },
+  companyForm(state) {
+    return state.companyForm;
+  },
+  selectedCompany(state) {
+    return state.selectedCompany;
+  },
   companyTableHeaders(state) {
     return state.companyTableHeaders;
   },

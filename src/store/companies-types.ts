@@ -2,6 +2,7 @@ import { FormElements } from '@/store/form-types';
 
 export interface CompaniesState {
   companies: Company[] | null;
+  selectedCompany: Company | {};
   companyTableHeaders: CompanyTableHeaderItem[] | null;
   companyForm: CompanyForm | null;
 }
@@ -20,4 +21,3 @@ export interface CompanyTableHeaderItem {
   value: string | number;
 }
 export type CompanyForm = FormElements[];
-

@@ -22,3 +22,55 @@ Since we have different customer requirements, the data a company consists of re
 1. Get the DynamicForm working with the provided data structure in the store
 2. Update the store according to the changes in the form, so the data is consistent
 3. Write the API documentation for the endpoints that you would need to connect the app to the backend
+
+
+
+
+## API documentation for endpoints needed:
+
+1. `/companies/create`
+
+=> An endpoint to create a new company
+
+=> payload: `{
+    companyName: string,
+    language: string,
+    key(could be anything, depending on the company): string
+}`
+
+Creates a company and return an error message on failure or success message on success.
+
+.
+
+.
+2. `/companies/{companyId}/update`
+
+=> An endpoint to update an existing company
+=> payload: `{
+    companyName: string,
+    language: string,
+    key(could be anything, depending on the company): string
+}`
+Updates an existing company and return an error message on failure or success message on success.
+
+.
+
+.
+
+3`/companies`
+
+=> An endpoint to list all existing companies
+
+Returns list of all existing companies
+
+.
+
+.
+
+2. `/companies/{companyId}/delete`
+
+=> An endpoint to delete an existing company
+
+Deletes an existing company and return an error message on failure or success message on success.
+
+

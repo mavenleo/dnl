@@ -18,6 +18,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .app-bar {
-  box-shadow: 0px 3px 8px #00000014 !important;
+  box-shadow: 0 3px 8px #00000014 !important;
 }
 </style>
