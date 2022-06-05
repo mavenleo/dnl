@@ -28,7 +28,7 @@ Since we have different customer requirements, the data a company consists of re
 
 ## API documentation for endpoints needed:
 
-1. `/companies/create`
+1.`/companies/create`
 
 => An endpoint to create a new company
 
@@ -40,10 +40,10 @@ Since we have different customer requirements, the data a company consists of re
 
 Creates a company and return an error message on failure or success message on success.
 
-.
 
 .
-2. `/companies/{companyId}/update`
+
+2.`/companies/{companyId}/update`
 
 => An endpoint to update an existing company
 => payload: `{
@@ -53,7 +53,6 @@ Creates a company and return an error message on failure or success message on s
 }`
 Updates an existing company and return an error message on failure or success message on success.
 
-.
 
 .
 
@@ -63,11 +62,11 @@ Updates an existing company and return an error message on failure or success me
 
 Returns list of all existing companies
 
-.
+
 
 .
 
-2. `/companies/{companyId}/delete`
+4.`/companies/{companyId}/delete`
 
 => An endpoint to delete an existing company
 
