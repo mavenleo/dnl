@@ -73,3 +73,13 @@ Returns list of all existing companies
 Deletes an existing company and return an error message on failure or success message on success.
 
 
+
+
+.
+
+4.`/companies/{companyId}/form-structure`
+
+=> An endpoint to get the form structure for a particular company
+
+Returns a form structure to be used in creating a new company.
+
